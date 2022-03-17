@@ -9,10 +9,16 @@ const StarshipDetail = (props) => {
     getDetails(location.state.starship.url)
     .then(starshipDetails => setStarshipDetails(starshipDetails))
   }, [])
-  
+
   return ( 
     <>
-      <h3>Starship Page</h3>
+      <div className='starship-container'>
+        <div id="starshipDiv">
+          <h3>NAME: {starshipDetails.name}</h3><br/>
+          <h3>MODEL: {starshipDetails.model}</h3>
+          <a href="/"><h2>RETURN</h2></a>
+        </div>
+      </div>
     </>
    );
 }

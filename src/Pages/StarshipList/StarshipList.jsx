@@ -26,6 +26,8 @@ const StarshipList = (props) => {
             </Link>
           ))}
         </div>
+        <>
+        </>
       </div>
     </>
   );
